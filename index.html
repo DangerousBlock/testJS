@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="title">Популярні інтерактивні ігри</h1>
+    <div class="line"></div>
+    <!-- Перевір в який рік ти народився -->
+    <h2 class="game-title">Перевір в який рік ти народився</h1>
+        <div class="game-wrap">
+        <form action="" class="game-form" onsubmit="checkYear(event)">
+            <input class="game-input" id="year-input" type="number" min="1" max="2024" placeholder="Введіть рік народження">
+            <button class="game-button" onclick="checkYear()">
+                <svg class="game-svg" width="17px" height="17px">
+                    <use href="./symbol-defs.svg#icon-search"></use>
+                </svg>
+            </button>
+        </form>
+        <p id="year-result" class="game-result"></p>
+        </div>
+    <div class="line"></div>
+    <!-- Вгадування числа -->
+    <h2 class="game-title">Вгадай число, яке загадав комп'ютер</h1>
+    <div class="game-wrap2">
+    <form action="" class="game-form2" onsubmit="guessNumber(event)">
+        <input class="game-input2" id="game-input" type="number" min="1" max="10" placeholder="Введіть число">
+        <button class="game-button" onclick="guessNumber()">
+            <svg class="game-svg" width="17px" height="17px">
+                <use href="./symbol-defs.svg#icon-search"></use>
+            </svg>
+        </button>
+    </form>
+    <p id="game-result" class="game-result"></p>
+    </div>
+    <div class="line"></div>
+    <!-- Калькулятор -->
+    <h2 class="game-title">Калькулятор</h2>
+    <div class="calculator-wrap">
+    <form class="calculator-form" onsubmit="calculate(event)">
+        <input id="number1" type="number" class="calculator-input" placeholder="Введіть число">
+        <div class="calculator-operations">
+            <button type="button" class="operation-button" onclick="setOperation('+')">+</button>
+            <button type="button" class="operation-button" onclick="setOperation('*')">*</button>
+            <button type="button" class="operation-button" onclick="setOperation('-')">-</button>
+            <button type="button" class="operation-button" onclick="setOperation('/')">/</button>
+        </div>
+        <input id="number2" type="number" class="calculator-input" placeholder="Введіть число">
+        <button class="calculator-button" onclick="calculate()">=</button>
+    </form>
+    <p class="calculator-result" id="calculator-result">Результат</p>
+    </div>
+    <div class="line"></div>
+    <!-- Калькулятор часу -->
+    <h2 class="game-title">Калькулятор часу</h2>
+    <div class="time-wrap">
+        <form class="time-form" onsubmit="calculateTime(event)">
+            <input type="number" id="time-input" class="time-input" placeholder="Введіть число">
+            <button type="button" class="time-button" onclick="calculateTime()">
+                <svg class="game-svg" width="17px" height="17px">
+                    <use href="./symbol-defs.svg#icon-search"></use>
+                </svg>
+            </button>
+        </form>
+        <p class="time-line">---------------</p>
+        <p id="time-result" class="time-result"></p>
+    </div>
+        <div class="line"></div>
+    <!-- Введіть три числа -->
+    <h2 class="game-title">Введіть 3 числа</h2>
+    <div class="number-wrap">
+        <form id="number-inputs" class="number-inputs">
+            <input id="number-input1" type="number" class="number-input" placeholder="Введіть число">
+            <input id="number-input2" type="number" class="number-input" placeholder="Введіть число">
+            <input id="number-input3" type="number" class="number-input" placeholder="Введіть число">
+        </form>
+        <p id="number-result" class="number-result">Введіть усі числа</p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
