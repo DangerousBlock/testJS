@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="greeting" id="greeting">Привіт!</div>
     <h1 class="title">Популярні інтерактивні ігри</h1>
     <div class="line"></div>
     <!-- Перевір в який рік ти народився -->
@@ -82,6 +83,16 @@
         </form>
         <p id="number-result" class="number-result">Введіть усі числа</p>
     </div>
+    <!-- Модалка -->
+    <div class="modal-window" id="modal">
+        <div class="modal-content">
+          <button class="close" onclick="closeModal()">x</button>
+          <p class="modal-desc">Привіт! <br> Ви потрапили на сайт інтерактивних ігор та завдань <br> Сподіваємось, що вам сподобається і ви отримаєте позитивні емоції! <br> Бажаємо Вам гарно провести час!</p>
+          <p class="modal-desc2">Введіть своє ім'я:</p>
+          <input class="modal-input" type="text" id="userName" placeholder="Ваше ім'я...">
+          <button class="modal-btn" onclick="saveName()">Зберегти</button>
+        </div>
+      </div>
     <script src="./script.js"></script>
 </body>
 </html>

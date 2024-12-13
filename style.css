@@ -206,3 +206,69 @@ input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-ou
 .number-result{
     margin-top: 36px;
 }
+.modal-window {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content{
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 576px;
+    height: 316px;
+    position: relative;
+}
+.modal-desc{
+    margin-top: 36px;
+    margin-bottom: 42px;
+    font-size: 13px;
+}
+.modal-desc2{
+    margin-bottom: 18px;
+    font-size: 13px;
+}
+.modal-input{
+    width: 169px;
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 30px;
+    margin-bottom: 18px;
+    background-color: rgba(215, 215, 215, 1);
+    font-family: Montserrat Alternates;
+    font-size: 12px;
+    border: none;
+}
+.modal-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 105px;
+    height: 35px;
+    border-radius: 30px;
+    font-family: Montserrat Alternates;
+    font-size: 12px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    font-size: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+.greeting {
+    font-size: 24px;
+    color:  black;
+}

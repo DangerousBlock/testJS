@@ -122,3 +122,26 @@ function findMaxNumber() {
 document.querySelectorAll('.number-input').forEach(input => {
     input.addEventListener('input', findMaxNumber);
 });
+
+// Модалка
+window.onload = function() {
+    document.getElementById('modal').style.display = 'flex';
+  };
+function saveName() {
+    const name = document.getElementById('userName').value;
+    if (name.trim() !== '') {
+      document.getElementById('modal').style.display = 'none';
+      const greeting = document.getElementById('greeting');
+      greeting.textContent = `Привіт, ${name}!`;
+      greeting.style.display = 'block';
+    } else {
+      alert('Будь ласка, введіть своє им`я.');
+    }
+}
+function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+    const greeting = document.getElementById('greeting');
+    greeting.textContent = `Привіт, User!`;
+    greeting.style.display = 'block';
+}
+  
